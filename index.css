@@ -1,0 +1,622 @@
+.navBarContainer {
+    height: 50px;
+    width: 100%;
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.appName {
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 34px;
+  margin-left: 15px;
+  font-weight: bold;
+  color: slategray;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  cursor: pointer;
+}
+
+.navBarLeft {
+  flex: 3;
+  display: flex;
+}
+
+.navBarCenter {
+  flex: 5;
+  display: flex;
+}
+
+.searchBar {
+  width: 100%;
+  height: 33px;
+  background-color: slategray;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.searchInput {
+  border: none;
+  width: 80%;
+  background-color: slategray;
+  margin-left: 22px;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: thistle;
+}
+
+.navBarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  color:  slategray;
+}
+
+.routerButtons {
+  margin-left: 30px;
+  justify-content: space-between;
+}
+
+.routerButton {
+  border: 2px solid black;
+}
+
+.linkButton {
+  color: thistle;
+  text-decoration: none;
+}
+
+.navLinks {
+  margin-right: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navIcons {
+  display: flex;
+}
+
+.navIcon {
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navIconBadge {
+  width: 12px;
+  height: 12px;
+  background-color: purple;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navProfileImage {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 33px;
+  cursor: pointer; 
+}
+
+.homeContainer {
+  display: flex;
+  width: 100%;
+}
+
+.left-bar {
+  flex: 3;
+}
+
+.leftBarWrapper {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.leftBarContainer {
+  display: flex;
+  align-items: center;
+}
+
+.droppedAlert {
+  display: flex;
+  align-items: center;
+}
+
+
+.droppedImage {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+}
+
+.todaysDrops {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.leftBarAd {
+  width: 100%;
+  border-radius: 8px;
+  margin: 33px 0;
+  cursor: pointer;
+}
+
+.onlineFriendsContainer {
+  background-color: black;
+  border-radius: 8px;
+  padding: 20px;
+  -webkit-box-shadow: -5px 3px 10px 2px thistle; 
+  box-shadow: -5px 3px 10px 2px thistle;
+}
+
+.onlineFriends {
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 34px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.onlineFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.leftBarFriend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.leftBarProfileImgContainer {
+  margin-right: 10px;
+  position: relative;
+}
+
+.leftBarProfileImage {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.leftBarOnline {
+  width: 13px;
+  height: 13px;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: limegreen;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+}
+
+.leftBarUsername {
+  font-weight: 450;
+}
+
+.newsfeedContainer {
+  flex: 6;
+  margin: 20px;
+}
+
+.post {
+  -webkit-box-shadow: -5px 3px 10px 2px thistle; 
+  box-shadow: -5px 3px 10px 2px thistle;
+  margin: 15px;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+.postTop {
+  display: flex;
+  align-items: center;
+}
+
+.postProfileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.postBody {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background-color: thistle;
+}
+
+.postInput {
+  text-align: left;
+  border: none;
+  width: 99%;
+  height: 99%;
+  border-radius: 5px;
+  outline: none;
+}
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postOptions {
+  display: flex;
+}
+
+.postOption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.postButton {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: thistle;
+  color: slategray;
+}
+
+.postCard {
+  margin-bottom: 10px;
+  -webkit-box-shadow: -5px 3px 10px 2px thistle; 
+  box-shadow: -5px 3px 10px 2px thistle;
+  margin: 30px 15px;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.displayPostProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.displayPostUsername {
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+.postDate {
+  font-size: 11px;
+  display: flex;
+  text-align: right;
+  align-items: center;
+}
+
+.displayPostImage {
+  border-radius: 18px;
+  border: 2px solid thistle;
+}
+
+.cardBody {
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.displayPostImage {
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+}
+
+.likeDiv {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.likeCounter {
+  margin-left: 10px;
+}
+
+.replyButtonDiv {
+  margin-left: 10px;
+}
+
+.commentCount {
+  margin-left: 10px;
+}
+
+.rightBarContainer {
+  flex: 3;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  position: sticky;
+  top: 50px; 
+}
+
+.adContainer {
+  display: flex;
+  align-items: center;
+  height: 275px;
+  justify-content: center;
+  padding: 15px;
+  margin: 33px;
+  cursor: pointer;
+}
+
+.adImage {
+  width: 100%;
+  border-radius: 18px;
+}
+
+.yourFriends {
+  background-color: black;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 30px;
+  text-align: center;
+  -webkit-box-shadow: -5px 3px 10px 2px thistle; 
+  box-shadow: -5px 3px 10px 2px thistle;
+}
+
+.yourFriendsTitle {
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.friendDisplay {
+  margin-top: 15px;
+}
+
+.friendList {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-top: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.friendName {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.friendImage {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profileLeft {
+  flex: 9; 
+}
+
+.profileCover {
+  height: 400px;
+  position: relative;
+}
+
+.profileCoverImage {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  border: 3px solid thistle;
+}
+
+.profilePicture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 200px;
+  border: 3px solid thistle;
+}
+
+.profileInfo {
+  font-family: 'Grechen Fuemen', cursive;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 8px;
+}
+
+.profileInfoName {
+  font-size: 34px;
+}
+
+.profileInfoBio {
+  font-size: 22px;
+  font-weight: 250;
+}
+
+.profileBio {
+  margin: 33px 10px;
+}
+
+.profileLeftContainer {
+  height: 350px;
+  background-color: black;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 33px 20px;
+}
+
+
+.profileBioItem {
+  margin-bottom: 10px;
+}
+
+.profileBioKey {
+  margin-left: 8px;
+  margin-right: 15px;
+  font-weight: bold;
+  color: slategray;
+
+}
+
+.profileBioValue {
+  font-weight: 250;
+}
+
+.profileLeftContainer {
+  flex: 3;
+}
+
+.profileLeftTitle {
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.profileLeftBottom {
+  display: flex;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: thistle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  display: flex;
+  width: 70%;
+  height: 70%;
+  background-color: slategray;
+  border-radius: 18px;
+  border: 4px solid black;
+}
+
+.loginLeft {
+  display: flex;
+  text-align: center;
+  font-family: 'Grechen Fuemen', cursive;
+}
+
+.mainImage {
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.loginLeft, .loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginLogo {
+   font-size: 48px;
+   font-weight: bold;
+   color: thistle;
+   margin-top: 30px;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+.loginDesc {
+  font-size: 28px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.loginBox {
+  color: thistle;
+  width: 550px;
+  border-radius: 18px;
+}
+
+.loginInput {
+  width: 100%;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  padding-left: 12px;
+  background-color: slategray;
+}
+
+.loginInput::placeHolder {
+  color: thistle;
+}
+
+
+.loginForgot, .loginCreate {
+  font-size: 12px;
+}
+
+.loginForgot {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.loginCreate {
+  margin: 8px 0px 8px 8px;
+}
+
+body {
+  background-color: slategray;
+  color: thistle;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: 'Oswald', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
